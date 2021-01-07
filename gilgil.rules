@@ -1,0 +1,39 @@
+alert tcp any any -> any 80 (msg:"Connection to gilgil.net"; content:"GET /"; content:"Host: "; content:"gilgil.net"; sid:10001; rev:1;)
+
+alert tcp any any -> any 80 (msg:"Connection to test.gilgil.net"; content:"Host: "; content:"test.gilgil.net"; sid:10002; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to twitter.com"; flow:to_server,established; tls.sni; content:"twitter.com"; sid:10003; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to naver.com"; flow:to_server,established; tls.sni; content:"naver.com"; sid:10004; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to facebook.com"; flow:to_server,established; tls.sni; content:"facebook.com"; sid:10005; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to netflix.com"; flow:to_server,established; tls.sni; content:"netflix.com"; sid:10006; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to github.com"; flow:to_server,established; tls.sni; content:"github.com"; sid:10007; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to stackoverflow.com"; flow:to_server,established; tls.sni; content:"stackoverflow.com"; sid:10008; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to kitribob.kr"; flow:to_server,established; tls.sni; content:"kitribob.kr"; sid:10009; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to kitribob.wiki"; flow:to_server,established; tls.sni; content:"kitribob.wiki"; sid:10010; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to kakao.com"; flow:to_server,established; tls.sni; content:"kakao.com"; sid:10011; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to youtube.com"; flow:to_server,established; tls.sni; content:"youtube.com"; sid:10012; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to jobkorea.co.kr"; flow:to_server,established; tls.sni; content:"jobkorea.co.kr"; sid:10013; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to saramin.co.kr"; flow:to_server,established; tls.sni; content:"saramin.co.kr"; sid:10014; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to nexon.com"; flow:to_server,established; tls.sni; content:"nexon.com"; sid:10015; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to gitlab.com"; flow:to_server,established; tls.sni; content:"gitlab.com"; sid:10016; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to tistory.com"; flow:to_server,established; tls.sni; content:"tistory.com"; sid:10017; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to daum.net"; flow:to_server,established; tls.sni; content:"daum.net"; sid:10018; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to bing.com"; flow:to_server,established; tls.sni; content:"bing.com"; sid:10019; rev:1;)
+
+alert tcp any any -> any 443 (msg:"Connection to wix.com"; flow:to_server,established; tls.sni; content:"wix.com"; sid:10020; rev:1;)
